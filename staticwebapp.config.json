@@ -1,0 +1,25 @@
+{
+  "build": {
+    "appLocation": "/",
+    "outputLocation": "dist",
+    "appBuildCommand": ""
+  },
+  "env": {
+    "NODE_VERSION": "20",
+    "VITE_STRAPI_API_TOKEN": ""
+  },
+  "platform": {
+    "apiRuntime": "node:20"
+  },
+  "routes": [
+    {
+      "route": "/*",
+	  "allowedRoles": [],
+      "serve": "index.html",
+      "statusCode": 200
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "index.html"
+  }
+}
